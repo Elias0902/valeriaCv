@@ -1,0 +1,203 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>CV — Valeria Vanessa Pérez García</title>
+<link rel="icon" type="image/svg+xml" href="favicon.svg">
+<link href="https://fonts.googleapis.com/css2?family=Playfair+Display:wght@600;700;800;900&family=Poppins:wght@300;400;500;600&display=swap" rel="stylesheet">
+<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css">
+<style>
+:root{--rosa:#db2777;--rosa-b:#f472b6;--rosa-c:#f9a8d4;--crema:#fff5f9;--tinta:#3b0d26;--gris:#5b4652}
+*{margin:0;padding:0;box-sizing:border-box}
+body{font-family:'Poppins',sans-serif;background:#fce7f3;color:var(--tinta);padding:30px 16px}
+.toolbar{max-width:820px;margin:0 auto 20px;display:flex;gap:12px;justify-content:center;flex-wrap:wrap}
+.toolbar button,.toolbar a{font-family:'Poppins';font-weight:600;font-size:.9rem;border:none;cursor:pointer;text-decoration:none;
+    padding:12px 24px;border-radius:40px;display:inline-flex;align-items:center;gap:8px;transition:.25s}
+.btn-print{background:var(--rosa);color:#fff}
+.btn-print:hover{background:var(--rosa-b)}
+.btn-back{background:#fff;color:var(--rosa);box-shadow:0 6px 18px -10px rgba(236,72,153,.5)}
+.hint{max-width:820px;margin:0 auto 20px;text-align:center;color:var(--gris);font-size:.85rem}
+
+.page{max-width:820px;margin:0 auto;background:var(--crema);display:grid;grid-template-columns:38% 62%;
+    box-shadow:0 20px 60px -30px rgba(236,72,153,.5);min-height:1120px}
+.side{padding:36px 26px;background:#fdf2f8}
+.main{padding:40px 34px}
+.photo{width:150px;height:150px;border-radius:50%;overflow:hidden;margin:0 auto 24px;
+    background:linear-gradient(160deg,var(--rosa-c),var(--rosa-b));display:grid;place-items:center;
+    box-shadow:0 14px 30px -14px rgba(236,72,153,.5)}
+.photo img{width:100%;height:100%;object-fit:cover;object-position:center 8%}
+.photo span{font-family:'Playfair Display';font-weight:900;font-size:3.4rem;color:#fff}
+h1{font-family:'Playfair Display';font-weight:900;color:var(--rosa);font-size:2.5rem;line-height:1.05;margin-bottom:6px}
+.role{color:var(--gris);font-weight:500;margin-bottom:26px;font-size:.95rem}
+h2{font-family:'Playfair Display';font-weight:700;font-size:1.15rem;color:var(--rosa);
+    margin:22px 0 12px;padding-bottom:6px;border-bottom:2px solid rgba(236,72,153,.2)}
+.item{margin-bottom:14px}
+.item h3{font-size:.95rem;font-weight:600;color:var(--tinta)}
+.item .meta{font-size:.78rem;color:var(--rosa-b);font-weight:600;margin:2px 0 5px}
+.item ul{list-style:none;display:flex;flex-direction:column;gap:4px}
+.item li{position:relative;padding-left:16px;font-size:.82rem;color:var(--gris);line-height:1.45}
+.item li::before{content:"";position:absolute;left:0;top:7px;width:6px;height:6px;border-radius:50%;background:var(--rosa-b)}
+.side p{font-size:.85rem;color:var(--gris);line-height:1.55}
+.contact li{list-style:none;display:flex;gap:10px;align-items:flex-start;margin-bottom:12px;font-size:.83rem;color:var(--tinta);word-break:break-word}
+.contact i{color:var(--rosa);width:18px;text-align:center;margin-top:3px}
+.chips{display:flex;flex-wrap:wrap;gap:7px;margin-top:6px}
+.chips span{background:rgba(236,72,153,.1);color:var(--rosa);font-size:.75rem;font-weight:500;padding:5px 12px;border-radius:20px}
+.bar-wrap{margin-bottom:12px}
+.bar-wrap .lbl{display:flex;justify-content:space-between;font-size:.8rem;font-weight:500;margin-bottom:4px}
+.bar{height:7px;background:rgba(236,72,153,.15);border-radius:10px;overflow:hidden}
+.bar div{height:100%;background:linear-gradient(90deg,var(--rosa-b),var(--rosa-c));border-radius:10px}
+
+@media print{
+    body{background:#fff;padding:0}
+    .toolbar,.hint{display:none}
+    .page{box-shadow:none;margin:0;max-width:100%}
+    @page{margin:0}
+}
+@media(max-width:640px){.page{grid-template-columns:1fr}.main{padding:30px 22px}h1{font-size:2rem}}
+</style>
+</head>
+<body>
+<div class="toolbar">
+    <button class="btn-print" id="btnPdf" onclick="exportarCV()"><i class="fa-solid fa-file-arrow-down"></i> Descargar CV (PDF)</button>
+    <button class="btn-back" onclick="window.print()"><i class="fa-solid fa-print"></i> Imprimir</button>
+    <a class="btn-back" href="index.html"><i class="fa-solid fa-arrow-left"></i> Volver al portafolio</a>
+</div>
+<p class="hint">Pulsa <b>Descargar CV (PDF)</b> para guardar el archivo, o <b>Imprimir</b> para enviarlo a papel/impresora.</p>
+
+<div class="page">
+    <aside class="side">
+        <div class="photo">
+            <img src="recursos/valeria.png" alt="Valeria Pérez"
+                 onerror="this.style.display='none';this.nextElementSibling.style.display='block';">
+            <span style="display:none">VP</span>
+        </div>
+
+        <h2>Sobre mí</h2>
+        <p>Edad: 25 años. Soy una mujer organizada, responsable, atenta y comprometida, con grandes habilidades y destrezas para desarrollarme en cualquier área. Tengo la mejor disposición para hacer mi trabajo y aprender cosas nuevas.</p>
+
+        <h2>Contacto</h2>
+        <ul class="contact">
+            <li><i class="fa-solid fa-location-dot"></i> Cabudare, Estado Lara</li>
+            <li><i class="fa-solid fa-envelope"></i> valeriavpg05@gmail.com</li>
+            <li><i class="fa-brands fa-whatsapp"></i> +58 424-516-5035</li>
+        </ul>
+
+        <h2>Habilidades</h2>
+        <div class="bar-wrap"><div class="lbl"><span>Inglés (C1)</span><span>90%</span></div><div class="bar"><div style="width:90%"></div></div></div>
+        <div class="bar-wrap"><div class="lbl"><span>Planificación y material didáctico</span><span>92%</span></div><div class="bar"><div style="width:92%"></div></div></div>
+        <div class="bar-wrap"><div class="lbl"><span>Manejo de grupos y oratoria</span><span>90%</span></div><div class="bar"><div style="width:90%"></div></div></div>
+        <div class="bar-wrap"><div class="lbl"><span>Redes y contenido</span><span>85%</span></div><div class="bar"><div style="width:85%"></div></div></div>
+        <div class="bar-wrap"><div class="lbl"><span>Ventas y fidelización</span><span>88%</span></div><div class="bar"><div style="width:88%"></div></div></div>
+        <div class="bar-wrap"><div class="lbl"><span>Office, Canva, Notion, Workspace</span><span>85%</span></div><div class="bar"><div style="width:85%"></div></div></div>
+
+        <h2>Competencias</h2>
+        <div class="chips">
+            <span>Planificación curricular</span><span>Aprendizaje activo</span><span>Evaluación por competencias</span>
+            <span>Adaptabilidad pedagógica</span><span>Social Media</span><span>Seguimiento de leads</span>
+        </div>
+
+        <h2>Idiomas</h2>
+        <p>Español (nativo) · Inglés (nivel C1)</p>
+    </aside>
+
+    <main class="main">
+        <h1>Valeria Vanessa<br>Pérez García</h1>
+        <p class="role">Profesora de Inglés · Community Manager · Ventas</p>
+
+        <h2>Educación</h2>
+        <div class="item">
+            <h3>Licenciatura en Educación mención Idioma Inglés</h3>
+            <div class="meta">Universidad Simón Rodríguez · Cursando el último semestre</div>
+        </div>
+
+        <h2>Experiencia laboral</h2>
+        <div class="item">
+            <h3>Profesora de Inglés & Coordinadora del Programa Bilingüe</h3>
+            <div class="meta">Colegio Pedro Pablo Barnola · Mar 2026 – Actualidad</div>
+            <ul><li>Profesora de inglés desde Inicial hasta 6to grado de primaria y coordinadora del programa bilingüe.</li></ul>
+        </div>
+        <div class="item">
+            <h3>Profesora suplente</h3>
+            <div class="meta">Colegio Madre Carmen Rendiles · Feb 2026 – Mar 2026</div>
+            <ul><li>Suplencia a 4to y 5to año de Bachillerato.</li></ul>
+        </div>
+        <div class="item">
+            <h3>Community Manager</h3>
+            <div class="meta">Importadora Corona Real · Nov 2025 – Dic 2025</div>
+            <ul><li>Manejo de Instagram, Facebook, TikTok y Marketplace; creación de reels, historias y posts.</li></ul>
+        </div>
+        <div class="item">
+            <h3>Fundadora y Profesora — English Course With Teacher Val</h3>
+            <div class="meta">Ene 2025 – Actualidad</div>
+            <ul><li>Diseño y dirección de un método integral de inglés para alumnos desde los 3 años hasta nivel adulto.</li></ul>
+        </div>
+        <div class="item">
+            <h3>Secretaria, Atención al Cliente y Redes (online)</h3>
+            <div class="meta">Onefix Construction · Florida, EE.UU. · Ene 2024 – Nov 2025</div>
+            <ul><li>Marketing, recepción y seguimiento de clientes nativos; compra de materiales, pagos de seguros y fees de permisos.</li></ul>
+        </div>
+        <div class="item">
+            <h3>Profesora de Inglés</h3>
+            <div class="meta">Psicoeducamos · May 2023 – Sep 2023</div>
+            <ul><li>Refuerzo escolar en un Centro de Formación Integral con inglés, artes y acompañamiento psicológico.</li></ul>
+        </div>
+        <div class="item">
+            <h3>Asesora de Ventas (online)</h3>
+            <div class="meta">Cores Relojería Panamá C.A. · Jul 2021 – Abr 2024</div>
+            <ul><li>Numerosas ventas diarias y afiliación de clientes potenciales, ampliando la cartera de clientes.</li></ul>
+        </div>
+
+        <h2>Pasantías</h2>
+        <div class="item">
+            <h3>Pasante — Profesora de Inglés</h3>
+            <div class="meta">Colegio 19 de Abril · Sep 2025 – Ene 2026</div>
+            <ul><li>Desde inicial hasta primaria/básica.</li></ul>
+        </div>
+
+        <h2>Cursos</h2>
+        <div class="item">
+            <h3>Inglés avanzado</h3>
+            <div class="meta">Westminster School of Languages · 1 año</div>
+        </div>
+        <div class="item">
+            <h3>Habilidades avanzadas de ventas — Método Wolfpack</h3>
+            <div class="meta">Michell Edery, CEO de smartBeemo</div>
+        </div>
+        <div class="item">
+            <h3>Barbería (básico)</h3>
+            <div class="meta">FUNDACUID · 3 meses · 48 horas</div>
+        </div>
+    </main>
+</div>
+
+<script src="https://cdnjs.cloudflare.com/ajax/libs/html2pdf.js/0.10.1/html2pdf.bundle.min.js"></script>
+<script>
+function exportarCV(){
+    var btn = document.getElementById('btnPdf');
+    var txtOriginal = btn.innerHTML;
+    btn.disabled = true;
+    btn.innerHTML = '<i class="fa-solid fa-spinner fa-spin"></i> Generando...';
+
+    var page = document.querySelector('.page');
+    var opciones = {
+        margin: 0,
+        filename: 'CV-Valeria-Vanessa-Perez-Garcia.pdf',
+        image: { type: 'jpeg', quality: 0.98 },
+        html2canvas: { scale: 2, useCORS: true, backgroundColor: '#fff5f9' },
+        jsPDF: { unit: 'mm', format: 'a4', orientation: 'portrait' },
+        pagebreak: { mode: ['css', 'legacy'] }
+    };
+
+    html2pdf().set(opciones).from(page).save().then(function(){
+        btn.disabled = false;
+        btn.innerHTML = txtOriginal;
+    }).catch(function(){
+        btn.disabled = false;
+        btn.innerHTML = txtOriginal;
+        window.print();
+    });
+}
+</script>
+</body>
+</html>

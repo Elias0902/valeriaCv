@@ -1,0 +1,450 @@
+<!DOCTYPE html>
+<html lang="es" dir="ltr">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="Valeria Vanessa Pérez García — Profesora de Inglés (C1), Community Manager y Asesora de Ventas. Cabudare, Lara.">
+    <meta name="author" content="Valeria Vanessa Pérez García">
+
+    <!-- Open Graph -->
+    <meta property="og:title" content="Valeria Pérez — Profesora de Inglés & Community Manager">
+    <meta property="og:description" content="Docente de inglés nivel C1, community manager y asesora de ventas. Enseñanza desde los 3 años hasta nivel adulto.">
+    <meta property="og:type" content="website">
+
+    <!-- Fuentes -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Playfair+Display:wght@500;600;700;800;900&family=Poppins:wght@300;400;500;600;700&display=swap" rel="stylesheet">
+
+    <!-- Íconos -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css" referrerpolicy="no-referrer" />
+
+    <!-- Favicon -->
+    <link rel="icon" type="image/svg+xml" href="favicon.svg">
+    <meta name="theme-color" content="#ec4899">
+
+    <title>Valeria Pérez | Profesora de Inglés & Community Manager</title>
+    <link rel="stylesheet" href="estilo-valeria.css">
+    <script>
+        document.documentElement.setAttribute('data-theme', 'light');
+    </script>
+</head>
+<body>
+
+    <!-- Barra de progreso de scroll -->
+    <div class="scroll-progress" id="scrollProgress"></div>
+
+    <!-- Preloader -->
+    <div class="preloader" id="preloader">
+        <div class="preloader-monogram">VP</div>
+    </div>
+
+    <!-- ===================== NAV ===================== -->
+    <header class="nav-header" id="navHeader">
+        <a href="#inicio" class="logo">Valeria<span>Pérez García</span></a>
+        <div class="nav-right">
+            <nav id="nav">
+                <ul>
+                    <li><a href="#inicio" class="nav-link">Inicio</a></li>
+                    <li><a href="#sobremi" class="nav-link">Sobre mí</a></li>
+                    <li><a href="#servicios" class="nav-link">Servicios</a></li>
+                    <li><a href="#experiencia" class="nav-link">Experiencia</a></li>
+                    <li><a href="#skills" class="nav-link">Habilidades</a></li>
+                    <li><a href="#empresas" class="nav-link">Empresas</a></li>
+                    <li><a href="#contacto" class="nav-link nav-cta">Contacto</a></li>
+                </ul>
+            </nav>
+            <button class="theme-toggle" id="themeToggle" aria-label="Cambiar modo claro/oscuro">
+                <i class="fa-solid fa-moon"></i>
+            </button>
+            <div class="nav-toggle" id="navToggle" aria-label="Menú">
+                <span></span><span></span><span></span>
+            </div>
+        </div>
+    </header>
+
+    <!-- ===================== HERO ===================== -->
+    <section id="inicio" class="hero">
+        <div class="blob blob-1"></div>
+        <div class="blob blob-2"></div>
+        <div class="blob blob-3"></div>
+        <div class="grid-overlay"></div>
+
+        <div class="hero-inner">
+            <div class="hero-text">
+                <p class="hero-eyebrow" data-reveal>✦ Teacher Val · Inglés nivel C1</p>
+                <h1 class="hero-name" id="heroName" aria-label="Valeria Vanessa Pérez García">
+                    <span class="line" data-line="Valeria"></span>
+                    <span class="line" data-line="Vanessa"></span>
+                    <span class="line accent" data-line="Pérez"></span>
+                    <span class="line" data-line="García"></span>
+                </h1>
+                <h2 class="hero-role">
+                    <span class="static-role">Soy</span>
+                    <span class="typed" id="typed"></span><span class="caret">|</span>
+                </h2>
+                <p class="hero-desc" data-reveal>
+                    Profesora de inglés con <strong>nivel C1</strong>, cursando el último semestre de
+                    <strong>Licenciatura en Educación mención Inglés</strong>. También tengo experiencia en
+                    <strong>ventas online</strong>, <strong>atención al cliente</strong> y
+                    <strong>manejo de redes sociales</strong>.
+                </p>
+                <div class="hero-cta" data-reveal>
+                    <a href="https://wa.me/584245165035?text=Hola%20Valeria,%20vi%20tu%20portafolio%20y%20quiero%20conversar" target="_blank" class="btn btn-primary">
+                        <i class="fa-brands fa-whatsapp"></i> Hablemos por WhatsApp
+                    </a>
+                    <a href="#contacto" class="btn btn-ghost">
+                        <i class="fa-solid fa-paper-plane"></i> Contáctame
+                    </a>
+                    <a href="cv-valeria.html" target="_blank" class="btn btn-line">
+                        <i class="fa-solid fa-download"></i> Descargar CV
+                    </a>
+                </div>
+                <div class="hero-socials" data-reveal>
+                    <a href="mailto:valeriavpg05@gmail.com" aria-label="Enviar correo a Valeria"><i class="fa-solid fa-envelope"></i></a>
+                    <a href="https://wa.me/584245165035" target="_blank" aria-label="Contactar a Valeria por WhatsApp"><i class="fa-brands fa-whatsapp"></i></a>
+                    <a href="tel:+584245165035" aria-label="Llamar a Valeria"><i class="fa-solid fa-phone"></i></a>
+                </div>
+            </div>
+
+            <div class="hero-photo" data-reveal>
+                <div class="photo-ring"></div>
+                <div class="photo-ring ring-2"></div>
+                <div class="photo-wrap">
+                    <img src="recursos/valeria.png" alt="Valeria Vanessa Pérez García"
+                         onerror="this.style.display='none';this.parentElement.classList.add('no-photo');">
+                    <div class="photo-fallback">VP</div>
+                </div>
+                <div class="floating-badge badge-1"><i class="fa-solid fa-chalkboard-user"></i> Teacher</div>
+                <div class="floating-badge badge-2"><i class="fa-solid fa-hashtag"></i> Community Mgr</div>
+                <div class="floating-badge badge-3"><i class="fa-solid fa-handshake"></i> Ventas</div>
+            </div>
+        </div>
+
+        <a href="#sobremi" class="scroll-hint" aria-label="Bajar">
+            <span></span> Desliza
+        </a>
+    </section>
+
+    <!-- Marquee de servicios -->
+    <div class="marquee">
+        <div class="marquee-track">
+            <span>Clases de Inglés ✦ Programa Bilingüe ✦ Community Manager ✦ Creación de Contenido ✦ Ventas Online ✦ Atención al Cliente ✦ Canva · Notion · Google Workspace ✦</span>
+            <span>Clases de Inglés ✦ Programa Bilingüe ✦ Community Manager ✦ Creación de Contenido ✦ Ventas Online ✦ Atención al Cliente ✦ Canva · Notion · Google Workspace ✦</span>
+        </div>
+    </div>
+
+    <!-- ===================== SOBRE MÍ ===================== -->
+    <section id="sobremi" class="section sobremi">
+        <div class="container">
+            <p class="section-tag" data-reveal>01 — Sobre mí</p>
+            <div class="sobremi-grid">
+                <div>
+                    <h2 class="section-title" data-reveal>Enseñar inglés es mi <span class="hl">pasión</span>.</h2>
+                    <p class="lead" data-reveal>
+                        Soy una mujer organizada, responsable, atenta y comprometida, con grandes habilidades
+                        y destrezas para desarrollarme en cualquier área. Tengo la mejor disposición para hacer
+                        mi trabajo y aprender cosas nuevas.
+                    </p>
+                    <p class="lead" data-reveal>
+                        Actualmente curso el último semestre de Licenciatura en Educación mención Inglés en la
+                        Universidad Simón Rodríguez. Enseño desde nivel inicial hasta adultos, coordino un programa
+                        bilingüe y dirijo mi propio método de enseñanza: <strong>English Course With Teacher Val</strong>.
+                    </p>
+                </div>
+                <div class="stats" data-reveal>
+                    <div class="stat"><span class="num" data-count="5">0</span><small>años de experiencia laboral</small></div>
+                    <div class="stat"><span class="num" data-count="8">0</span><small>empresas e instituciones</small></div>
+                    <div class="stat"><span class="num" data-count="3">0</span><small>años: edad desde la que enseño</small></div>
+                    <div class="stat"><span class="num" data-count="2">0</span><small>idiomas (español e inglés C1)</small></div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- ===================== SERVICIOS ===================== -->
+    <section id="servicios" class="section servicios">
+        <div class="container">
+            <p class="section-tag" data-reveal>02 — Servicios</p>
+            <h2 class="section-title center" data-reveal>Cómo puedo <span class="hl">ayudarte</span></h2>
+            <div class="cards">
+                <article class="card" data-reveal>
+                    <div class="card-icon"><i class="fa-solid fa-chalkboard-user"></i></div>
+                    <h3>Clases de Inglés</h3>
+                    <p>Programa personalizado para alumnos desde los 3 años hasta nivel adulto, con planificación y material didáctico propio.</p>
+                </article>
+                <article class="card" data-reveal>
+                    <div class="card-icon"><i class="fa-solid fa-hashtag"></i></div>
+                    <h3>Community Manager</h3>
+                    <p>Manejo de Instagram, Facebook, TikTok y Marketplace. Creación de contenido: reels, historias y posts.</p>
+                </article>
+                <article class="card" data-reveal>
+                    <div class="card-icon"><i class="fa-solid fa-handshake"></i></div>
+                    <h3>Ventas Online</h3>
+                    <p>Estrategias de venta, fidelización de clientes y seguimiento de leads para ampliar la cartera de clientes.</p>
+                </article>
+                <article class="card" data-reveal>
+                    <div class="card-icon"><i class="fa-solid fa-headset"></i></div>
+                    <h3>Asistencia y Atención</h3>
+                    <p>Secretaría, recepción y seguimiento de clientes (también nativos en inglés), compras y gestión de pagos.</p>
+                </article>
+            </div>
+        </div>
+    </section>
+
+    <!-- ===================== EXPERIENCIA ===================== -->
+    <section id="experiencia" class="section experiencia">
+        <div class="container">
+            <p class="section-tag" data-reveal>03 — Trayectoria</p>
+            <h2 class="section-title center" data-reveal>Experiencia y <span class="hl">formación</span></h2>
+
+            <div class="timeline">
+                <div class="tl-item" data-reveal>
+                    <div class="tl-dot"></div>
+                    <span class="tl-date">Mar 2026 — Actualidad</span>
+                    <h3>Profesora de Inglés & Coordinadora Bilingüe</h3>
+                    <span class="tl-place">Colegio Pedro Pablo Barnola</span>
+                    <ul>
+                        <li>Profesora de inglés desde Inicial hasta 6to grado de primaria.</li>
+                        <li>Coordinadora del programa bilingüe de la institución.</li>
+                    </ul>
+                </div>
+
+                <div class="tl-item" data-reveal>
+                    <div class="tl-dot"></div>
+                    <span class="tl-date">Feb 2026 — Mar 2026</span>
+                    <h3>Profesora suplente</h3>
+                    <span class="tl-place">Colegio Madre Carmen Rendiles</span>
+                    <ul>
+                        <li>Suplencia en 4to y 5to año de Bachillerato.</li>
+                    </ul>
+                </div>
+
+                <div class="tl-item" data-reveal>
+                    <div class="tl-dot"></div>
+                    <span class="tl-date">Nov 2025 — Dic 2025</span>
+                    <h3>Community Manager</h3>
+                    <span class="tl-place">Importadora Corona Real</span>
+                    <ul>
+                        <li>Manejo de todas las redes sociales (Instagram, Facebook, TikTok, Marketplace).</li>
+                        <li>Creación de contenido: reels, diseños para historias y posts.</li>
+                    </ul>
+                </div>
+
+                <div class="tl-item" data-reveal>
+                    <div class="tl-dot"></div>
+                    <span class="tl-date">Sep 2025 — Ene 2026</span>
+                    <h3>Pasante — Profesora de Inglés</h3>
+                    <span class="tl-place">Colegio 19 de Abril</span>
+                    <ul>
+                        <li>Clases de inglés desde inicial hasta primaria/básica.</li>
+                    </ul>
+                </div>
+
+                <div class="tl-item" data-reveal>
+                    <div class="tl-dot"></div>
+                    <span class="tl-date">Ene 2025 — Actualidad</span>
+                    <h3>Fundadora y Profesora</h3>
+                    <span class="tl-place">English Course With Teacher Val</span>
+                    <ul>
+                        <li>Diseño y dirección de un método integral de enseñanza del idioma inglés.</li>
+                        <li>Programa personalizado para alumnos desde los 3 años hasta nivel adulto.</li>
+                    </ul>
+                </div>
+
+                <div class="tl-item" data-reveal>
+                    <div class="tl-dot"></div>
+                    <span class="tl-date">Ene 2024 — Nov 2025</span>
+                    <h3>Secretaria, Atención al Cliente y Redes</h3>
+                    <span class="tl-place">Onefix Construction · Florida, EE.UU. (remoto)</span>
+                    <ul>
+                        <li>Marketing, recepción y seguimiento de clientes nativos en inglés.</li>
+                        <li>Compra de materiales, pagos de seguros y fees de permisos.</li>
+                    </ul>
+                </div>
+
+                <div class="tl-item" data-reveal>
+                    <div class="tl-dot"></div>
+                    <span class="tl-date">May 2023 — Sep 2023</span>
+                    <h3>Profesora de Inglés</h3>
+                    <span class="tl-place">Psicoeducamos · Centro de Formación Integral</span>
+                    <ul>
+                        <li>Clases de inglés como refuerzo escolar en horario de la tarde.</li>
+                    </ul>
+                </div>
+
+                <div class="tl-item" data-reveal>
+                    <div class="tl-dot"></div>
+                    <span class="tl-date">Jul 2021 — Abr 2024</span>
+                    <h3>Asesora de Ventas Online</h3>
+                    <span class="tl-place">Cores Relojería Panamá C.A.</span>
+                    <ul>
+                        <li>Generé numerosas ventas diarias con estrategias efectivas de manejo al cliente.</li>
+                        <li>Afilié clientes potenciales con compras continuas, ampliando la cartera de clientes.</li>
+                    </ul>
+                </div>
+
+                <div class="tl-item edu" data-reveal>
+                    <div class="tl-dot"></div>
+                    <span class="tl-date">Último semestre (en curso)</span>
+                    <h3>Licenciatura en Educación mención Inglés</h3>
+                    <span class="tl-place">Universidad Simón Rodríguez</span>
+                    <ul>
+                        <li>Formación docente con especialización en la enseñanza del idioma inglés.</li>
+                    </ul>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- ===================== SKILLS ===================== -->
+    <section id="skills" class="section skills">
+        <div class="container">
+            <p class="section-tag" data-reveal>04 — Habilidades</p>
+            <h2 class="section-title center" data-reveal>Lo que domino</h2>
+            <div class="skills-grid">
+                <div class="skill" data-reveal><div class="skill-head"><span>Inglés (nivel C1)</span><span>90%</span></div><div class="bar"><div class="fill" data-fill="90"></div></div></div>
+                <div class="skill" data-reveal><div class="skill-head"><span>Planificación curricular y material didáctico</span><span>92%</span></div><div class="bar"><div class="fill" data-fill="92"></div></div></div>
+                <div class="skill" data-reveal><div class="skill-head"><span>Manejo de grupos y oratoria</span><span>90%</span></div><div class="bar"><div class="fill" data-fill="90"></div></div></div>
+                <div class="skill" data-reveal><div class="skill-head"><span>Redes sociales y creación de contenido</span><span>85%</span></div><div class="bar"><div class="fill" data-fill="85"></div></div></div>
+                <div class="skill" data-reveal><div class="skill-head"><span>Ventas y fidelización de clientes</span><span>88%</span></div><div class="bar"><div class="fill" data-fill="88"></div></div></div>
+                <div class="skill" data-reveal><div class="skill-head"><span>Office, Excel, Canva, Notion, Workspace</span><span>85%</span></div><div class="bar"><div class="fill" data-fill="85"></div></div></div>
+            </div>
+
+            <div class="soft-skills" data-reveal>
+                <span>Organizada</span><span>Responsable</span><span>Atenta</span>
+                <span>Comprometida</span><span>Adaptabilidad Pedagógica</span><span>Comunicación Efectiva</span>
+                <span>Evaluación por Competencias</span><span>Aprendizaje Activo (Classroom)</span>
+            </div>
+        </div>
+    </section>
+
+    <!-- ===================== CURSOS ===================== -->
+    <section id="certificaciones" class="section certificaciones">
+        <div class="container">
+            <p class="section-tag" data-reveal>04.5 — Cursos</p>
+            <h2 class="section-title center" data-reveal>Formación <span class="hl">continua</span></h2>
+            <div class="certs-grid">
+                <div class="cert" data-reveal>
+                    <i class="fa-solid fa-certificate"></i>
+                    <div>
+                        <h3>Inglés Avanzado</h3>
+                        <span class="cert-meta">Westminster School of Languages · 1 año · Estructuras, vocabulario, comprensión, conversación y fonética</span>
+                    </div>
+                </div>
+                <div class="cert" data-reveal>
+                    <i class="fa-solid fa-certificate"></i>
+                    <div>
+                        <h3>Habilidades Avanzadas de Ventas — Método Wolfpack</h3>
+                        <span class="cert-meta">Con Michell Edery, CEO de smartBeemo</span>
+                    </div>
+                </div>
+                <div class="cert" data-reveal>
+                    <i class="fa-solid fa-certificate"></i>
+                    <div>
+                        <h3>Barbería (Básico)</h3>
+                        <span class="cert-meta">FUNDACUID · 3 meses · 48 horas</span>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- ===================== EMPRESAS ===================== -->
+    <section id="empresas" class="section empresas">
+        <div class="container">
+            <p class="section-tag" data-reveal>05 — Empresas</p>
+            <h2 class="section-title center" data-reveal>Donde he <span class="hl">trabajado</span></h2>
+            <div class="empresas-grid">
+                <div class="empresa txt" data-reveal data-icon="fa-solid fa-school" data-name="Colegio Pedro Pablo Barnola" data-desc="Profesora de inglés desde Inicial hasta 6to grado de primaria y coordinadora del programa bilingüe de la institución." data-ubicacion="Mar 2026 — Actualidad"><i class="fa-solid fa-school"></i><strong>Pedro Pablo Barnola</strong><small>Colegio</small></div>
+                <div class="empresa txt" data-reveal data-icon="fa-solid fa-book-open" data-name="Colegio Madre Carmen Rendiles" data-desc="Suplencia como profesora en 4to y 5to año de Bachillerato." data-ubicacion="Feb 2026 — Mar 2026"><i class="fa-solid fa-book-open"></i><strong>Madre Carmen Rendiles</strong><small>Colegio</small></div>
+                <div class="empresa txt" data-reveal data-icon="fa-solid fa-crown" data-name="Importadora Corona Real" data-desc="Community Manager: manejo de Instagram, Facebook, TikTok y Marketplace, y creación de contenido (reels, historias y posts)." data-ubicacion="Nov 2025 — Dic 2025"><i class="fa-solid fa-crown"></i><strong>Corona Real</strong><small>Importadora</small></div>
+                <div class="empresa txt" data-reveal data-icon="fa-solid fa-apple-whole" data-name="Colegio 19 de Abril" data-desc="Pasantías como profesora de inglés desde inicial hasta primaria/básica." data-ubicacion="Sep 2025 — Ene 2026"><i class="fa-solid fa-apple-whole"></i><strong>19 de Abril</strong><small>Colegio</small></div>
+                <div class="empresa txt" data-reveal data-icon="fa-solid fa-heart" data-name="English Course With Teacher Val" data-desc="Programa personalizado de inglés, con diseño y dirección de un método integral de enseñanza para alumnos desde los 3 años hasta nivel adulto." data-ubicacion="Ene 2025 — Actualidad"><i class="fa-solid fa-heart"></i><strong>Teacher Val</strong><small>English Course</small></div>
+                <div class="empresa txt" data-reveal data-icon="fa-solid fa-house-chimney" data-name="Onefix Construction" data-desc="Empresa de restauración residencial y comercial en Florida, Estados Unidos. Secretaria, atención al cliente y manejo de redes: marketing, recepción y seguimiento de clientes nativos, compra de materiales, pagos de seguros y fees de permisos." data-ubicacion="Florida, EE.UU. · Remoto"><i class="fa-solid fa-house-chimney"></i><strong>Onefix Construction</strong><small>Florida, EE.UU.</small></div>
+                <div class="empresa txt" data-reveal data-icon="fa-solid fa-brain" data-name="Psicoeducamos" data-desc="Centro de Formación Integral que funciona en horario de la tarde como refuerzo escolar, con especialidades como inglés, educación física, artes plásticas y acompañamiento psicológico." data-ubicacion="May 2023 — Sep 2023"><i class="fa-solid fa-brain"></i><strong>Psicoeducamos</strong><small>Centro de formación</small></div>
+                <div class="empresa txt" data-reveal data-icon="fa-solid fa-clock" data-name="Cores Relojería Panamá C.A." data-desc="Asesora de ventas online: estrategias de manejo al cliente, numerosas ventas diarias y afiliación de clientes potenciales con compras continuas." data-ubicacion="Jul 2021 — Abr 2024"><i class="fa-solid fa-clock"></i><strong>Cores Relojería</strong><small>Panamá</small></div>
+            </div>
+        </div>
+    </section>
+
+    <!-- ===================== CONTACTO ===================== -->
+    <section id="contacto" class="section contacto">
+        <div class="container">
+            <p class="section-tag" data-reveal>06 — Contacto</p>
+            <h2 class="section-title center" data-reveal>¿Trabajamos <span class="hl">juntos</span>?</h2>
+            <p class="contacto-sub center" data-reveal>Escríbeme y te respondo lo antes posible. Clases presenciales en Cabudare y online.</p>
+
+            <div class="contacto-grid">
+                <form class="form" id="contactForm" data-reveal>
+                    <div class="field"><input type="text" id="nombre" name="nombre" required placeholder=" "><label for="nombre">Tu nombre</label></div>
+                    <div class="field"><input type="tel" id="telefono" name="telefono" placeholder=" "><label for="telefono">Teléfono (opcional)</label></div>
+                    <div class="field"><input type="email" id="email" name="email" required placeholder=" "><label for="email">Tu correo</label></div>
+                    <div class="field"><input type="text" id="asunto" name="asunto" placeholder=" "><label for="asunto">Asunto</label></div>
+                    <div class="field"><textarea id="mensaje" name="mensaje" rows="5" required placeholder=" "></textarea><label for="mensaje">Mensaje</label></div>
+                    <button type="submit" class="btn btn-primary full">Enviar mensaje <i class="fa-solid fa-paper-plane"></i></button>
+                </form>
+
+                <div class="contacto-info" data-reveal>
+                    <a class="info-item" href="https://wa.me/584245165035" target="_blank">
+                        <i class="fa-brands fa-whatsapp"></i>
+                        <div><strong>WhatsApp</strong><span>+58 424-516-5035</span></div>
+                    </a>
+                    <a class="info-item" href="tel:+584245165035">
+                        <i class="fa-solid fa-phone"></i>
+                        <div><strong>Teléfono</strong><span>+58 424-516-5035</span></div>
+                    </a>
+                    <a class="info-item" href="mailto:valeriavpg05@gmail.com">
+                        <i class="fa-solid fa-envelope"></i>
+                        <div><strong>Correo</strong><span>valeriavpg05@gmail.com</span></div>
+                    </a>
+                    <div class="info-item">
+                        <i class="fa-solid fa-language"></i>
+                        <div><strong>Idiomas</strong><span>Español nativo · Inglés C1</span></div>
+                    </div>
+                    <div class="info-item">
+                        <i class="fa-solid fa-location-dot"></i>
+                        <div><strong>Ubicación</strong><span>Cabudare, Estado Lara, Venezuela</span></div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- ===================== FOOTER ===================== -->
+    <footer class="footer">
+        <p class="footer-name">Valeria Vanessa Pérez García</p>
+        <p class="footer-role">Profesora de Inglés · Community Manager · Ventas</p>
+        <div class="footer-socials">
+            <a href="https://wa.me/584245165035" target="_blank" rel="noopener" aria-label="WhatsApp de Valeria"><i class="fa-brands fa-whatsapp"></i></a>
+            <a href="tel:+584245165035" aria-label="Teléfono de Valeria"><i class="fa-solid fa-phone"></i></a>
+            <a href="mailto:valeriavpg05@gmail.com" aria-label="Correo de Valeria"><i class="fa-solid fa-envelope"></i></a>
+        </div>
+        <p class="footer-copy">© <span id="year"></span> · Hecho con dedicación.</p>
+    </footer>
+
+    <!-- Modal Empresa -->
+    <div class="modal-overlay" id="empresaModal">
+        <div class="modal-box">
+            <button class="modal-close" id="modalClose" aria-label="Cerrar">&times;</button>
+            <div class="modal-img-wrap">
+                <img src="" alt="" id="modalImg">
+            </div>
+            <div class="modal-icon"><i id="modalIcon"></i></div>
+            <h3 class="modal-name" id="modalName"></h3>
+            <span class="modal-location" id="modalLocation"></span>
+            <p class="modal-desc" id="modalDesc"></p>
+        </div>
+    </div>
+
+    <!-- Botón WhatsApp flotante -->
+    <a href="https://wa.me/584245165035?text=Hola%20Valeria,%20vi%20tu%20portafolio" target="_blank" class="wa-float" aria-label="WhatsApp">
+        <i class="fa-brands fa-whatsapp"></i>
+    </a>
+    <!-- Volver arriba -->
+    <a href="#inicio" class="to-top" id="toTop" aria-label="Volver arriba"><i class="fa-solid fa-arrow-up"></i></a>
+
+    <script src="script-valeria.js"></script>
+</body>
+</html>
