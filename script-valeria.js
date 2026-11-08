@@ -48,7 +48,7 @@ document.addEventListener('DOMContentLoaded', () => {
         'Profesora de Inglés.',
         'Teacher Val.',
         'Community Manager.',
-        'Asesora de Ventas.'
+        'Coordinadora Bilingüe.'
     ];
     const typed = document.getElementById('typed');
     if (typed) {
